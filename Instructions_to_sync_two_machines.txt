@@ -126,3 +126,19 @@ git push -u origin master
 
 This is the same as step 10.  The names of the repositories should be the same here as in 
 step 10.
+
+%-----------------------------------------------------------------------------------------
+% Adopt changes on the github repository into the local repository
+11. Type,
+
+git fetch upstream
+
+To gather changes from the upstream repository.  Changes made upstream will be stored
+on a local branch called "upstrea/master".
+
+12. To merge the upstream changes into your local master type,
+
+git merge upstream/master
+
+This will bring your fork's master inline with the upstream repository, without losing 
+your local changes (?).
